@@ -5,7 +5,13 @@
     {{movieDetails.title}}
     <h3>Director: {{movieDetails.director}}</h3>
     <h4>Stars</h4>
-    {{movieDetails.stars}}
+    <ul>
+
+    {{#each movieDetails.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+
+    </ul>
     <br>
     <p> </p>
     {{movieDetails.description}}
